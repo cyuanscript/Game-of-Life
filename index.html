@@ -13,7 +13,7 @@
     <script type="text/javascript" src="./main.js"></script>
 </head>
 <body>
-    <canvas id="gameWorld" width="1400" height="700" style="background: #2e2e2e; border: 1px solid black" tabindex="0" autofocus></canvas>
+    <canvas id="gameWorld" width="800" height="800" style="background: #2e2e2e; border: 1px solid black" tabindex="0" autofocus></canvas>
     <div>
         <br>
         <div id="ticks">Ticks: 0</div>
@@ -27,6 +27,14 @@
             <label for="speed">Fast</label>
             <input type="range" id="speed" min="1" max="120" value="30" step="1">
             <label for="speed">Slow</label>
+        </fieldset>
+        <br>
+        Presets:
+        <fieldset style="width: 1200px">
+            <input type="button" id="random" value="Random">
+            <input type="button" id="checkerboard" value="Checkerboard">
+            <input type="button" id="blindfolds" value="Blindfolds">
+            <input type="button" id="diagonal" value="Skewed Diagonal">
         </fieldset>
     </div>
 </body>
